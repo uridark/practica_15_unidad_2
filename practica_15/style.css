@@ -1,0 +1,30 @@
+.iteam-a{
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+    background-color: red;
+}
+.iteam-b{
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 3;
+grid-row-end: 4;
+background-color: aqua;
+}
+.iteam-c{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: violet;
+}
+.container{
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns:
+    1fr 1fr 1fr 1fr [five];
+    grid-template-rows: 
+    [row1-start] 150px 150px 150px 150px;
+}
